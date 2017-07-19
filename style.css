@@ -1,11 +1,21 @@
  @import url('https://fonts.googleapis.com/css?family=Rubik:700');
+
 * {
 	box-sizing: border-box;
 }
 
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover, a:active{
+	color: #cd2626;
+}
 body{
 	background-color: #222;
 	color: #fff;
+	font-family: Helvetica, Arial, sans-serif;
 }
 .intro, header{
 	width: 100%;
@@ -15,8 +25,11 @@ body{
 
 header{
 	display: block;
-	width: 75%;
-	margin:auto;
+	width: 50%;
+	height: 400px;
+	float: left;
+	text-align: right;
+	padding: 100px 25px 0px 0px;
 }
 .intro header h1{
 	display: block;
@@ -27,20 +40,53 @@ header{
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 6em;
-	letter-spacing: .15em;
 	line-height: 1;
 	width: 100%;
 	margin: 0 auto;
-	text-align: center;
 }
 .intro header h2{
-	color: #00FFAA;
 	float: left;
+	color: #ccc;
 	clear: both;
 	font-family: Rubik, sans-serif;
 	line-height: 1;
 	width: 100%;
 	margin: 0 auto;
-	text-align: left;
+	margin-right: 5px;
+}
+
+
+#zen-summary{
+	float: left;
+	display: block;
+	width: 30%;
+	padding: 100px 0px 0px 25px;
+}
+#zen-summary::before{
+	content: '';
+	width: 1px;
+	background-color: #32CC99;
+	height: 250px;
+	display: block;
+	position: relative;
+	left: -25px;
+	float: left;
+}
+#zen-preamble{
+	clear: both;
+}
+
+h3{
+	font-size: 2em;
+	color: #32CC99;
+}
+
+.design-selection li a:first-child{
+	font-style: italic;
+	color: #DC6767;
+}
+
+.design-selection li a:nth-child(2){
+	font-weight: bold;
 
 }
