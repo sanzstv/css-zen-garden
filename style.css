@@ -16,11 +16,18 @@ body{
 	background-color: #222;
 	color: #fff;
 	font-family: Helvetica, Arial, sans-serif;
+	margin: 0;
 }
+
+.page-wrapper{
+	width: 75%;
+}
+
 .intro, header{
 	width: 100%;
 	position: relative;
 	display: block;
+	clear: both;
 }
 
 header{
@@ -68,6 +75,7 @@ header{
 	white-space: nowrap;
 }
 
+/*download icons for HTML/CSS files*/
 #zen-summary a::before{
 	background-image: url("images/cloud.png");
 	content: '';
@@ -81,6 +89,8 @@ header{
 	margin-right: 3px;
 	line-height: 16px;
 }
+
+/*middle vertical divider in main header, hide/make horizontal on smaller screens*/
 #zen-summary::before{
 	content: '';
 	width: 1px;
@@ -91,10 +101,16 @@ header{
 	left: -25px;
 	float: left;
 }
+
 #zen-preamble{
 	clear: both;
+	padding: 0 5%;
 }
 
+
+#zen-supporting div[role="article"]{
+	padding: 0 5%;
+}
 h3{
 	font-size: 2em;
 	color: #32CC99;
@@ -103,12 +119,67 @@ h3{
 .design-selection li{
 	list-style: none;
 }
+
+/*styling individual design links*/
+
+/*design title*/
 .design-selection li a:first-child{
 	font-style: italic;
 	color: #DC6767;
 }
 
+.design-selection li a:first-child:hover{
+	text-decoration: underline;
+}
+/*design creator name*/
 .design-selection li a:nth-child(2){
 	font-weight: bold;
+
+}
+
+.sidebar {
+	float: right;
+	display: block;
+	background-color: #32CC99;
+
+	padding: 0 20px;
+	clear: both;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 25%;
+	height: 100%;
+}
+
+.sidebar h3{
+	color: #fff;
+	margin: 0;
+}
+/*footer with my design info and CSSZenGarden info*/
+footer{
+	background-color: #cd2626;
+	bottom: 0;
+	height: 100px;
+	left: 0;
+	width: 100%;
+	clear: both;
+}
+
+footer a{
+	float: left;
+	display: block;
+
+}
+
+footer a:hover{
+	color: inherit;
+	text-decoration: underline;
+}
+
+p[role="contentinfo"]{
+z-index: 999;
+float: left;
+clear: both;
+display: block;
 
 }
