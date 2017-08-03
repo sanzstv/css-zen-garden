@@ -1,3 +1,4 @@
+ /*font for main title*/
  @import url('https://fonts.googleapis.com/css?family=Rubik:700');
 
 * {
@@ -125,15 +126,14 @@ h3{
 /*design title*/
 .design-selection li a:first-child{
 	font-style: italic;
-	color: #DC6767;
+	font-weight: bold;
 }
 
-.design-selection li a:first-child:hover{
+.design-selection li a:hover{
 	text-decoration: underline;
 }
 /*design creator name*/
 .design-selection li a:nth-child(2){
-	font-weight: bold;
 
 }
 
@@ -141,8 +141,7 @@ h3{
 	float: right;
 	display: block;
 	background-color: #32CC99;
-
-	padding: 0 20px;
+	padding: 20px;
 	clear: both;
 	position: fixed;
 	top: 0;
@@ -155,7 +154,7 @@ h3{
 	color: #fff;
 	margin: 0;
 }
-/*footer with my design info and CSSZenGarden info*/
+/*footer with design info*/
 footer{
 	background-color: #cd2626;
 	bottom: 0;
@@ -163,12 +162,18 @@ footer{
 	left: 0;
 	width: 100%;
 	clear: both;
+	text-align: center;
 }
 
 footer a{
-	float: left;
-	display: block;
-
+	display: inline-block;
+	text-align: center;
+  	text-indent: 100%;
+  	white-space: nowrap;
+  	overflow: hidden;
+  	height: 75px;
+  	width: 75px;
+	margin: 10px 2%;
 }
 
 footer a:hover{
@@ -176,10 +181,41 @@ footer a:hover{
 	text-decoration: underline;
 }
 
-p[role="contentinfo"]{
-z-index: 999;
-float: left;
-clear: both;
-display: block;
+/*footer icons*/
 
+.zen-validate-html{
+	background: url(images/html5.png);
+	background-repeat: no-repeat;
+	background-size: 75px;
+}
+
+.zen-validate-css{
+	background: url(images/css3.png);
+	background-repeat: no-repeat;
+	background-size: 75px;
+}
+
+.zen-license{
+	background: url(images/cc.png);
+	background-repeat: no-repeat;
+	background-size: 75px;
+}
+
+.zen-accessibility{
+	background: url(images/accessibility.png);
+	background-repeat: no-repeat;
+	background-size: 75px;
+}
+
+.zen-github{
+	background: url(images/github2.png);
+	background-repeat: no-repeat;
+	background-size: 75px;
+}
+
+p[role="contentinfo"]{
+	z-index: 999;
+	float: left;
+	clear: both;
+	display: block;
 }
