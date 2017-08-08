@@ -47,7 +47,7 @@ header{
 	font-family: Rubik, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
-	font-size: 6em;
+	font-size: 5em;
 	line-height: 1;
 	width: 100%;
 	margin: 0 auto;
@@ -95,7 +95,7 @@ header{
 #zen-summary::before{
 	content: '';
 	width: 1px;
-	background-color: #32CC99;
+	background-color: #85E8C8;
 	height: 250px;
 	display: block;
 	position: relative;
@@ -114,7 +114,7 @@ header{
 }
 h3{
 	font-size: 2em;
-	color: #32CC99;
+	color: #85E8C8;
 }
 
 .design-selection li{
@@ -140,8 +140,10 @@ h3{
 .sidebar {
 	float: right;
 	display: block;
-	background-color: #32CC99;
+	background-color: #ccc;
+	/*background-color: #32CC99;*/
 	padding: 20px;
+	color: #222;
 	clear: both;
 	position: fixed;
 	top: 0;
@@ -151,8 +153,12 @@ h3{
 }
 
 .sidebar h3{
-	color: #fff;
+	color: #222;
 	margin: 0;
+}
+
+.sidebar a{
+	color: #CD2626;
 }
 /*footer with design info*/
 footer{
@@ -218,4 +224,48 @@ p[role="contentinfo"]{
 	float: left;
 	clear: both;
 	display: block;
+}
+@media all and (max-width: 991px){
+	.sidebar{
+		float: left;
+		width: 100%;
+		position: relative;
+		padding: 20px 5%;
+	}
+
+	.page-wrapper{
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 991px){
+	#zen-summary{
+		float: left;
+		width: 100%;
+		padding: 0 5%;
+	}
+	#zen-summary:before{
+		display: none;
+	}
+
+	header{
+		width: 100%;
+		height: initial;
+		padding: 20px 0 0 5%;
+		text-align: left;
+	}
+	.intro header h1{
+		font-size: 3em;
+
+	}
+}
+
+@media all and (max-width: 507px){
+	footer{
+		height: initial;
+	}
+	footer a{
+	    margin: 10px 5%;
+	}
+
 }
